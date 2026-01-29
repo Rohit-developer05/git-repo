@@ -1,0 +1,47 @@
+# Step 1: Go to your local project
+cd "D:\GIT Practice"
+
+# Step 2: Initialize git (if not already)
+git init
+
+# Step 3: Add files
+git add .
+
+# Step 4: Commit changes
+git commit -m "Initial commit"
+
+# Step 5: Add GitHub remote repo
+git remote add origin https://github.com/your-username/your-repo-name.git
+
+# Step 6: Push to GitHub
+git push origin master
+Now the error you got:
+
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/...'
+Meaning:
+GitHub does NOT accept your GitHub password anymore.
+
+You must use Personal Access Token (PAT).
+
+Correct way (with Token):
+
+git push origin master
+When it asks:
+
+Username: your-github-username
+Password: <PASTE_YOUR_PERSONAL_ACCESS_TOKEN>
+Best remembered flow:
+
+Local Repo → Commit → Connect to GitHub → Push
+git add .
+git commit -m "msg"
+git remote add origin <repo-url>
+git push origin master
+And authentication rule:
+
+GitHub Password ❌
+GitHub Token (PAT) ✅
+One-line memory trick:
+
+GitHub push = Username + Token, not Username + Password.
