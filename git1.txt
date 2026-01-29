@@ -1,0 +1,109 @@
+git --version:- Shows installed Git version.
+
+git config --global user.name "Your Name":- Sets your name for commits.
+
+git config --global user.email "email" :- Sets your email for commits.
+
+git config --list :- Shows all Git configuration.
+
+git init :- Creates a new empty Git repository in current folder.
+
+git clone <url>:- Copies an existing remote repository to your system.
+
+git status :- Shows current state of files (modified, staged, untracked).
+
+git log :- Shows commit history.
+
+git log --oneline :- Shows commit history in short format.
+
+git show :- Shows details of a commit.
+
+git diff :- Shows changes not yet staged.
+
+git add file.txt :- Adds one file to staging area.
+
+git add . :- Adds all modified files to staging.
+
+git rm file.txt :- Deletes file and tracks deletion.
+
+git mv old.txt new.txt :- Renames or moves a file.
+
+git commit -m "message" :- Creates a commit with message.
+
+git commit -am "message" :- Stages and commits modified tracked files.
+
+git commit --amend :- Edits last commit (message or files).
+
+git branch :-Lists all local branches.
+
+git branch new-branch :- Creates new branch.
+
+git checkout branch_name :- Switches branch.
+
+git checkout -b new-branch :- Creates and switches branch.
+
+git switch branch_name :- Newer way to switch branch.
+
+git switch -c new-branch :- Create & switch in one command.
+
+git branch -m new_name :- Renames current branch.
+
+git branch -m old new :- Renames another branch.
+
+git branch -d branch_name :- Deletes merged branch.
+
+git branch -D branch_name :- Force deletes branch.
+
+git remote -v :- Shows remote repositories.
+
+git remote add origin <url> :- Connects local repo to remote.
+ 
+git remote remove origin :- Removes remote connection.
+
+git push :- Uploads commits to remote.
+
+git push origin branch :- Pushes specific branch.
+
+git push -u origin branch :- Sets upstream and pushes.
+
+git pull :- Fetches + merges changes from remote.
+
+git fetch :- Downloads changes but does not merge.
+
+git push origin --delete branch :- Deletes branch from remote.
+
+git merge branch_name :- Merges branch into current branch.
+
+git rebase branch_name :- Moves your commits on top of another branch.
+
+git stash :- Temporarily saves uncommitted changes.
+
+git stash list :- Shows saved stashes.
+
+git stash apply :- Applies stash without deleting it.
+
+git stash pop :- Applies stash and removes it.
+
+git stash drop :- Deletes a stash.
+
+git reset --soft HEAD~1 :- Undo last commit but keep changes staged.
+
+git reset --mixed HEAD~1 :- Undo commit and unstage changes.
+
+git reset --hard HEAD~1 :- Completely remove last commit and changes.
+
+git checkout -- file.txt :- Reverts file to last committed state.
+
+git tag :- Lists tags.
+
+git tag v1.0 :- Creates a version tag.
+
+git push origin v1.0 :- Pushes tag to remote.
+
+git clean -f :- Deletes untracked files.
+
+git clean -fd :- Deletes untracked files & folders.
+
+git help :- Shows help options.
+
+git help commit:- Shows help for commit command.
