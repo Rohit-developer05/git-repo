@@ -1,0 +1,80 @@
+Provider:- Provider is tool which communicate terraform with diffrent cloud.
+(Provider is a plugin in Terraform that enables interaction with a specific cloud or service by defining authentication, region, and API details.)
+
+Block :- Terraform block is the fundamental structure in Terraform configuration that defines how infrastructure should be created and managed.
+Type of Block:-
+
+1. Provider Block:- This block tell terraform that which cloud we are working with
+2. Resource Block:- This block tell terraform that which or what thing need to create.
+3. Variable Block:- A variable block in Terraform is used to define input values that allow Terraform configurations to be flexible, reusable, and environment-independent.
+4. Output Block:- This block tell the output of terrafrm code.
+5.Module Block:- This block tell terraform to reused which code.
+6. Terraform Block:- This block is for terraform setting.
+7. Data Block:- It is used to read the information of already existing resources without creating new resource.
+8.Dynamic Block:- A dynamic block in Terraform is used to generate repeated nested blocks programmatically using loops.
+9. Imports Block:- An import block in Terraform is used to bring existing infrastructure resources under Terraform management by importing them into the Terraform state.
+ 
+ What is Argument block?
+
+ Argument = An argument in Terraform is a configuration parameter defined inside a block
+
+terraform init – Project initialize karta hai aur providers/modules download karta hai.
+
+terraform validate – Terraform code ka syntax check karta hai (kuch create nahi karta).
+
+terraform plan – Batata hai kaun-kaun se resources create, update ya delete honge (preview).
+
+terraform apply – Terraform configuration ke according actual infrastructure create/update karta hai.
+
+terraform destroy – Terraform se bane huye saare resources delete karta hai.
+
+terraform fmt – Terraform code ko proper standard format mein arrange karta hai.
+ 
+ terraform.tfstate kya hota hai?
+
+terraform.tfstate ek state file hoti hai jisme Terraform:
+👉 real cloud infrastructure ka record rakhta hai
+👉 aur map karta hai Terraform code ↔ actual resources
+
+Simple line:
+
+terraform.tfstate = Terraform ki memory.
+
+terraform.tfstate kya store karta hai?
+
+Kaun-kaun se resources bane hue hain
+
+Resource IDs (VM ID, disk ID, IP, etc.)
+
+Resource attributes
+
+Dependencies
+
+Metadata
+
+Why terraform.tfstate is important?
+
+Terraform isi file se decide karta hai:
+
+Kya naya banana hai
+
+Kya update karna hai
+
+Kya delete karna hai
+
+Agar state file na ho ❌
+Terraform blind ho jaata hai.
+
+
+Module ke 2 types (IMPORTANT)
+1️⃣ Root Module
+
+Jo folder tum terraform init se run karte ho
+
+Ye main entry point hota hai
+
+2️⃣ Child Module
+
+Jo root module ke andar call hota hai
+
+Reusable code hota hai
